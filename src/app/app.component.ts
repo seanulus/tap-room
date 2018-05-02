@@ -16,4 +16,15 @@ export class AppComponent {
     new Keg('Rainier', 'RBC', 2, 4.6, 'http://www.historylink.org/Content/Media/Photos/Large/RainierBeer-banner.jpg'),
     new Keg('Bullseye Brown', 'Barley Browns', 5, 5.1, 'http://static1.squarespace.com/static/52276e2ce4b0862847b03583/t/522a4a5de4b09baf3db1eed6/1518207274958/')
   ]
+  selectedKeg = null;
+
+  editKeg(clickedKeg) {
+    console.log('clicked');
+    this.selectedKeg = clickedKeg;
+  }
+
+  finishedEditing() {
+    console.log('done');
+    this.selectedKeg = null;
+  }
 }

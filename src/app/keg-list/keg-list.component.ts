@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Keg }  from '../models/keg-props.model';
 
 @Component({
@@ -8,9 +8,12 @@ import { Keg }  from '../models/keg-props.model';
 })
 export class KegListComponent {
   @Input() childKegsList: Keg[];
-  constructor() { }
+  @Output() clickSender = new EventEmitter();
 
-  ngOnInit() {
+  editButtonClicked(kegToEdit: Keg) {
+    this.clickSender.emit(kegToEdit)
   }
+
+  constructor() { }
 
 }

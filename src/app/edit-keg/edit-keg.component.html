@@ -1,0 +1,16 @@
+
+<div class="card" *ngIf="childSelectedKeg">
+  <h2>Edit Keg</h2>
+  <h3>{{childSelectedKeg.name}} {{childSelectedKeg.brand}}</h3>
+  <label>Enter a beer name:</label><br>
+  <input [(ngModel)]='childSelectedKeg.name'><br>
+  <label>Enter a brewery:</label>
+  <input [(ngModel)]='childSelectedKeg.brand'> <br>
+  <label>Enter a new image url:</label>
+  <input [(ngModel)]='childSelectedKeg.imageUrl'> <br>
+  <label>Enter a new ABV:</label>
+  <input [(ngModel)]='childSelectedKeg.alcoholContent'> <br>
+  <label>Enter a new price:</label>
+  <input [(ngModel)]='childSelectedKeg.price'> <br>
+  <button (click)="finishedEditing()">Done</button>
+</div>

@@ -2,4 +2,5 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-keg-list [childKegsList]="masterKegsList"></app-keg-list>
+  <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-keg>
+  <app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)"></app-keg-list>
