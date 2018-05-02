@@ -1,0 +1,17 @@
+.row {
+  clear: left;
+}
+.card {
+  float: left;
+  width: 16%;
+  height: 10%;
+  margin: 1%;
+  background-color: lightblue;
+  padding: 2%;
+}
+
+.beerImg {
+  display: block;
+  height: 200px;
+  max-width: 200px;
+}
