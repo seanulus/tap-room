@@ -23,8 +23,11 @@ export class AppComponent {
     this.selectedKeg = clickedKeg;
   }
 
+  addKeg(newKeg: Keg) {
+    this.masterKegsList.push(newKeg);
+  }
+
   finishedEditing() {
-    console.log('done');
     this.selectedKeg = null;
   }
 }
