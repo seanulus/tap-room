@@ -4,14 +4,14 @@
   <h3>{{childSelectedKeg.name}} {{childSelectedKeg.brand}}</h3>
   <label>Enter a beer name:</label><br>
   <input [(ngModel)]='childSelectedKeg.name'><br>
-  <label>Enter a brewery:</label>
+  <label>Enter a brewery:</label><br>
   <input [(ngModel)]='childSelectedKeg.brand'> <br>
-  <label>Enter a new image url:</label>
+  <label>Enter a new image url:</label><br>
   <input [(ngModel)]='childSelectedKeg.imageUrl'> <br>
-  <label>Enter a new ABV:</label>
+  <label>Enter a new ABV:</label><br>
   <input [(ngModel)]='childSelectedKeg.alcoholContent'> <br>
-  <label>Enter a new price:</label>
-  <input [(ngModel)]='childSelectedKeg.price'> <br>
-  <button (click)="finishedEditing()">Done</button>
-  <button (click)="buyPint(keg)">Buy Pint</button>
+  <label>Enter a new price:</label><br>
+  <input class="mb-3"[(ngModel)]='childSelectedKeg.price'> <br>
+  <button class="btn" (click)="finishedEditing()">Done</button>
+  <button class="btn" (click)="buyPint(keg)">Buy Pint</button>
 </div>

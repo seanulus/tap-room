@@ -1,16 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .card {
-  float: left;
-  width: 12%;
+  width: 49%;
   min-width: 200px;
-  min-height: 10%;
-  margin: 1%;
-  background-color: lightblue;
-  padding: 2%;
+  float: left;
+  height: 5%;
+  margin: 0.2%;
+  background: linear-gradient(#302e2e, #1c1b1b);
+  padding: 1%;
+  line-height: 8px;
+
 }
 
+.text-in-cards {
+  line-height: 18px;
+  padding-top: 30px;
+}
+
+.price {
+  padding-top: 35px;
+}
+
+.button-card {
+  display: inline;
+  padding-top: 20px;
+}
+
+.button-card button {
+  float: left;
+}
+
+#beer-title {
+  line-height: 20px;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.beer-info {
+  float: right;
+  padding: 0;
+}
+
+
 .beerImg {
-  display: block;
-  height: 200px;
+  display: inline-block;
+  border-radius: 100%;
+  height: 100px;
   max-width: 200px;
 }

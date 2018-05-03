@@ -9,11 +9,11 @@ import { Keg } from './models/keg-props.model'
 export class AppComponent {
   title = 'app';
   masterKegsList: Keg[] = [
-    new Keg('Notorius', 'Boneyard', 6, 11.5, 'https://cdn.beeradvocate.com/im/beers/70013.jpg'),
-    new Keg('Sweet As', 'Goodlife', 5, 6, 'https://www.goodlifebrewing.com/wp-content/uploads/2015/06/Sweet-As-Can.png'),
-    new Keg('Milk Stout', 'Left Hand', 5, 6, 'http://lefthandbrewing.com/wp/wp-content/uploads/2013/05/milkstout.png'),
-    new Keg('Sage Cider', 'Wildcraft', 6, 7.6, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkWFQd_BF8ah8G6Op3CoLEio9hTJ7XYVRvDIvGrHc3dtpGV_zH6g'),
-    new Keg('Rainier', 'RBC', 2, 4.6, 'http://www.historylink.org/Content/Media/Photos/Large/RainierBeer-banner.jpg'),
+    new Keg('Notorius', 'Boneyard', 6, 11.5, 'https://lh4.ggpht.com/piXpS2tucek7AAzRBxVH7GIxVDzd2sOiQJdZFQJM8NCAQhLjlWFPgKMwmexb_g6k6LLrcNeWpdZH7wI-9EOaNHttSNiWFQ=s300'),
+    new Keg('Sweet As', 'Goodlife', 5, 6, 'https://cdn.craftbeer.com/wp-content/uploads/2016/02/10170649/sweetas-sm.png'),
+    new Keg('Milk Stout', 'Left Hand', 5, 6, 'https://lh3.googleusercontent.com/mIKpdnvTfrEElgpwRgm2m6jInz2fQ6tlLrxHh2GIU1z-PDpLMUdrJwSZZ2vEbawZug-m4vFg3ehH7r5lvscic2V-bzaV=s750'),
+    new Keg('Sage Cider', 'Wildcraft', 6, 7.6, 'https://lh5.ggpht.com/O0_DGRt8LcjUdVLwooz8Bvjm-UTqUkH8N9NVps_VqHXteqMuP13Lb6IFfVUsRoM0uO7ljepgu0IjbLNNNb3iWhc9Qu3PBVw=s300'),
+    new Keg('Rainier', 'RBC', 2, 4.6, 'https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/102014/rainier.png?itok=JsSEd8ne'),
     new Keg('Bullseye Brown', 'Barley Browns', 5, 5.1, 'http://static1.squarespace.com/static/52276e2ce4b0862847b03583/t/522a4a5de4b09baf3db1eed6/1518207274958/')
   ]
 

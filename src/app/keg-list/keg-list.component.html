@@ -1,12 +1,21 @@
 <h1>Tap-List</h1>
 <div class="row">
   <div class="card" *ngFor="let keg of childKegsList">
-    <p>{{ keg.brand }} {{ keg.name }}</p>
-    <img class="beerImg" src="{{ keg.imageUrl }}" alt="">
-    <p>ABV: {{ keg.alcoholContent }}%</p>
-    <p>${{keg.price}}</p>
-    <p> Pints Left: {{ keg.pints }}</p>
-    <button (click)="editButtonClicked(keg)">Edit</button>
-    <button (click)="buyPint(keg)">Buy Pint</button>
+    <div class="row">
+      <div class="col-md-2">
+        <img class="beerImg" src="{{ keg.imageUrl }}" alt="">
+      </div>
+      <div class="col-md-5 text-in-cards">
+        <p id="beer-title">{{ keg.brand }} {{ keg.name }}</p>
+        <p>ABV: {{ keg.alcoholContent }}%  Pints Left: {{ keg.pints }}</p>
+      </div>
+      <div class="col-md-2 text-in-cards price">
+        <p>${{keg.price}} </p>
+      </div>
+      <div class="col-md-3 text-in-cards button-card">
+        <button class="btn mr-2" (click)="editButtonClicked(keg)">Edit</button>
+        <button class="btn " (click)="buyPint(keg)">Buy Pint</button>
+      </div>
+    </div>
   </div>
 </div>
