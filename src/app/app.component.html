@@ -1,7 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>
-  Welcome to {{ title }}!
-</h1>
-<app-new-keg (sendKeg)="addKeg($event)"></app-new-keg>
-<app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-keg>
-<app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)"></app-keg-list>
+
+<div class="container-fluid">
+  <div class="row">
+    <app-keg-list [childKegsList]="masterKegsList" (clickSender)="editKeg($event)" (buySender)="buyPint($event)"></app-keg-list>
+  </div>
+  <div class="row">
+    <app-new-keg (sendKeg)="addKeg($event)"></app-new-keg>
+  </div>
+  <div class="row">
+    <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-keg>
+  </div>
+</div>

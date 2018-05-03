@@ -13,7 +13,7 @@ import { NewKegComponent } from './new-keg/new-keg.component';
     AppComponent,
     KegListComponent,
     EditKegComponent,
-    NewKegComponent
+    NewKegComponent,
   ],
   imports: [
     BrowserModule,

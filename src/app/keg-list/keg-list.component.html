@@ -5,6 +5,8 @@
     <img class="beerImg" src="{{ keg.imageUrl }}" alt="">
     <p>ABV: {{ keg.alcoholContent }}%</p>
     <p>${{keg.price}}</p>
+    <p> Pints Left: {{ keg.pints }}</p>
     <button (click)="editButtonClicked(keg)">Edit</button>
+    <button (click)="buyPint(keg)">Buy Pint</button>
   </div>
 </div>

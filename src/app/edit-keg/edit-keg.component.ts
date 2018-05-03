@@ -13,7 +13,7 @@ export class EditKegComponent {
   finishedEditing() {
     this.clickedDone.emit();
   }
-  
+
   constructor() { }
 
 }

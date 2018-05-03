@@ -1,24 +1,29 @@
-<h1>New Keg</h1>
-<div>
-  <label>Enter New Keg Name:</label>
-  <input #newName>
-</div>
-<div>
-  <label>Enter Brand:</label>
-  <input #newBrand>
-</div>
-<div>
-  <label>Enter Price:</label>
-  <input #newPrice>
-</div>
-<div>
-  <label>Enter Alcohol Content:</label>
-  <input #newAlcoholContent>
-</div>
-<div>
-  <label> Enter Image URL:</label>
-  <input #newImageUrl>
-</div>
-<div>
-  <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAlcoholContent.value, newImageUrl.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAlcoholContent.value=''; newImageUrl.value='';">Add Keg</button>
+<button class="mb-4" (click)="newKeg1()">NewKeg</button>
+<div class="card" *ngIf="newKeg">
+  <h1>New Keg</h1>
+  <div>
+    <label>Enter New Keg Name:</label>
+    <input #newName>
+  </div>
+  <div>
+    <label>Enter Brand:</label>
+    <input #newBrand>
+  </div>
+  <div>
+    <label>Enter Price:</label>
+    <input #newPrice>
+  </div>
+  <div>
+    <label>Enter Alcohol Content:</label>
+    <input #newAlcoholContent>
+  </div>
+  <div>
+    <label> Enter Image URL:</label>
+    <input #newImageUrl>
+  </div>
+  <div>
+    <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAlcoholContent.value, newImageUrl.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAlcoholContent.value=''; newImageUrl.value='';">Add Keg</button>
+    <button (click)="finishedNewKeg()">Finished</button>
+  </div>
+
 </div>

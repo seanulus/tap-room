@@ -1,3 +1,7 @@
+.container-fluid {
+  padding: 9%;
+}
+
 .row {
   display: block;
   width: 100%;

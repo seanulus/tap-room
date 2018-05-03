@@ -9,10 +9,21 @@ import { Keg }  from '../models/keg-props.model';
 export class KegListComponent {
   @Input() childKegsList: Keg[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickShower = new EventEmitter();
+
+  selectedKeg = null;
 
   editButtonClicked(kegToEdit: Keg) {
-    this.clickSender.emit(kegToEdit)
+    this.clickSender.emit(kegToEdit);
   }
+
+
+  buyPint(clickedKeg) {
+   clickedKeg.pints -= 1;
+  }
+
+
+
 
   constructor() { }
 

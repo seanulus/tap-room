@@ -1,8 +1,9 @@
 
 .card {
   float: left;
-  width: 16%;
-  height: 10%;
+  width: 12%;
+  min-width: 200px;
+  min-height: 10%;
   margin: 1%;
   background-color: lightblue;
   padding: 2%;
